@@ -79,8 +79,9 @@ const Signup = () => {
                             type="text"
                             value={input.fullname}
                             name="fullname"
+                            autoComplete="current-name"
                             onChange={changeEventHandler}
-                            placeholder="patel"
+                            placeholder="Enter your Full Name Here..."
                         />
                     </div>
                     <div className='my-2'>
@@ -89,8 +90,9 @@ const Signup = () => {
                             type="email"
                             value={input.email}
                             name="email"
+                            autoComplete="current-email"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="Enter your Email Here..."
                         />
                     </div>
                     <div className='my-2'>
@@ -99,8 +101,9 @@ const Signup = () => {
                             type="text"
                             value={input.phoneNumber}
                             name="phoneNumber"
+                            autoComplete="current-phone"
                             onChange={changeEventHandler}
-                            placeholder="8080808080"
+                            placeholder="Enter your PhoneNo. Here..."
                         />
                     </div>
                     <div className='my-2'>
@@ -109,8 +112,9 @@ const Signup = () => {
                             type="password"
                             value={input.password}
                             name="password"
+                            autoComplete="current-password"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="Enter your Password..."
                         />
                     </div>
                     <div className='flex items-center justify-between'>
@@ -149,7 +153,7 @@ const Signup = () => {
                         </div>
                     </div>
                     {
-                        loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Signup</Button>
+                        loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4 bg-[#6A38C2]">Signup</Button>
                     }
                     <span className='text-sm'>Already have an account? <Link to="/login" className='text-blue-600'>Login</Link></span>
                 </form>

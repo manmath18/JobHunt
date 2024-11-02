@@ -65,8 +65,9 @@ const Login = () => {
                             type="email"
                             value={input.email}
                             name="email"
+                            autoComplete="current-email"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="Enter your Username Here..."
                         />
                     </div>
 
@@ -76,8 +77,9 @@ const Login = () => {
                             type="password"
                             value={input.password}
                             name="password"
+                            autoComplete="current-password"
                             onChange={changeEventHandler}
-                            placeholder="patel@gmail.com"
+                            placeholder="Enter your Password.."
                         />
                     </div>
                     <div className='flex items-center justify-between'>
@@ -107,7 +109,7 @@ const Login = () => {
                         </RadioGroup>
                     </div>
                     {
-                        loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4">Login</Button>
+                        loading ? <Button className="w-full my-4"> <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Please wait </Button> : <Button type="submit" className="w-full my-4 bg-[#6A38C2]">Login</Button>
                     }
                     <span className='text-sm'>Don't have an account? <Link to="/signup" className='text-blue-600'>Signup</Link></span>
                 </form>
